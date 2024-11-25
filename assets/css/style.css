@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Sacramento&display=swap");
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
 /* General Styling */
+html {
+  scroll-behavior: smooth; /* Tambahkan efek scrolling halus */
+}
 body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  background: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
 }
 
 .container {
@@ -25,30 +32,42 @@ h3 {
   background: url("https://images.freeimages.com/images/large-previews/7a2/purple-flower-mockup-0410-5701966.jpg?fmt=webp&h=350")
     no-repeat center center/cover; /* Ganti dengan gambar latar */
   color: #fff;
-  padding: 100px 0;
+  padding: 280px 0;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: #b306e3;
+  font-size: 6rem;
 }
 
 .hero h2 {
+  color: rgb(240, 255, 253);
+  margin-bottom: 2rem;
   font-size: 2rem;
 }
 
 /* Countdown Section */
 .countdown {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: -50px;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: center;
 }
 
 .countdown h3 {
-  margin-bottom: 20px;
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .countdown p {
@@ -75,15 +94,27 @@ h3 {
 
 /* Location Section */
 .location {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
+  background-color: rgb(236, 216, 255);
+  padding: 50px 30px;
+  text-align: center;
 }
-
+.location a {
+  background-color: blueviolet;
+  padding: 10px 15px;
+  color: azure;
+  margin-bottom: 30px;
+}
+.location a:hover {
+  background-color: rgba(137, 43, 226, 0.635);
+  color: azure;
+}
 .location h3 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #b306e3;
+  font-size: 6rem;
 }
 
 .location iframe {
@@ -97,7 +128,7 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  margin-top: 40px;
+  text-align: center;
 }
 
 footer p {
@@ -107,17 +138,18 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 0;
+    padding: 300px 0;
   }
 
   .hero h1 {
+    font-size: 3rem;
+  }
+  .countdown h3 {
     font-size: 2.5rem;
   }
-
   .hero h2 {
     font-size: 1.8rem;
   }
-
   #countdown-timer > div {
     margin: 8px;
   }
@@ -127,6 +159,10 @@ footer p {
   }
 
   .location iframe {
-    height: 300px;
+    width: 100%;
+    height: 150px;
+  }
+  .location h3 {
+    font-size: 2.5rem;
   }
 }
