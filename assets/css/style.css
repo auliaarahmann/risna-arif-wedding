@@ -125,12 +125,18 @@ h3 {
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: blueviolet;
+  color: rgb(215, 196, 233);
   padding: 20px;
   text-align: center;
 }
-
+footer a {
+  color: #f2cdfd;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(176, 92, 254);
+}
 footer p {
   margin: 0;
 }
