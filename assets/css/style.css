@@ -96,17 +96,20 @@ h3 {
 /* Printed */
 .undangan-printed {
   background-image: url(../images/undangan-digital.jpg);
-  background-size: contain;
-  background-color: #f4f4f4; /* Pilihan warna latar jika ada ruang kosong */
-
-  background-position: center; /* Posisi tengah untuk mencegah potongan gambar yang tidak diinginkan */
-  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  background-size: contain; /* Menjaga gambar tetap utuh */
+  background-color: #f4f4f4; /* Warna latar untuk ruang kosong */
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100vw; /* Memenuhi lebar layar */
-  height: 150vh; /* Memenuhi tinggi layar */
-  margin: 0;
-  padding: 0;
+  height: auto; /* Tinggi akan menyesuaikan */
+  padding-top: calc(100vw / 1.44); /* Menjaga aspek rasio 1600x1108 */
+  padding-bottom: 0; /* Hapus padding bawah */
   text-align: center;
+  display: flex; /* Membantu sentralisasi konten jika ada */
+  justify-content: center;
+  align-items: center;
 }
+
 /* Location Section */
 .location {
   background-color: rgb(236, 216, 255);
@@ -159,6 +162,10 @@ footer p {
 
   .hero h1 {
     font-size: 3rem;
+  }
+  .undangan-printed {
+    padding-top: calc(100vw / 1.44);
+    height: auto;
   }
   .countdown h3 {
     font-size: 2.5rem;
