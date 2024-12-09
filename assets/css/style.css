@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Sacramento&display=swap");
 :root {
+  --primary: #66728a;
   --pink: #f14e95;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
@@ -64,7 +65,7 @@ h3 {
 }
 
 .countdown h3 {
-  color: var(--pink);
+  color: var(--primary);
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
@@ -92,9 +93,22 @@ h3 {
   margin-bottom: 5px;
 }
 
+/* Printed */
+.undangan-printed {
+  background-image: url(../images/undangan-digital.jpg);
+  background-size: cover; /* Pastikan gambar menyesuaikan ukuran kontainer */
+  background-position: center; /* Posisi tengah untuk mencegah potongan gambar yang tidak diinginkan */
+  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  width: 100vw; /* Memenuhi lebar layar */
+  height: 150vh; /* Memenuhi tinggi layar */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 /* Location Section */
 .location {
   background-color: rgb(236, 216, 255);
+  height: 100vh; /* Menjamin tinggi elemen sesuai dengan tinggi layar */
   padding: 50px 30px;
   text-align: center;
 }
