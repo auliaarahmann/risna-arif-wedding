@@ -96,7 +96,9 @@ h3 {
 /* Printed */
 .undangan-printed {
   background-image: url(../images/undangan-digital.jpg);
-  background-size: cover; /* Pastikan gambar menyesuaikan ukuran kontainer */
+  background-size: contain;
+  background-color: #f4f4f4; /* Pilihan warna latar jika ada ruang kosong */
+
   background-position: center; /* Posisi tengah untuk mencegah potongan gambar yang tidak diinginkan */
   background-repeat: no-repeat; /* Hindari pengulangan gambar */
   width: 100vw; /* Memenuhi lebar layar */
